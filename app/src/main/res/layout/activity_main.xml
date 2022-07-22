@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A1A3A"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <!-- - 메인 리니어 레이아웃 변환 -->
+
+    <!--  -->
+    <!-- LinearLayout  밑으로 TableLayout 생성 -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="3dp"
+        android:layout_weight="1"
+        android:background="#1A1A3A"
+        android:elevation="100dp">
+
+        <ImageView
+            android:id="@+id/appLogo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/titleTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="LCKInfo"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/appLogo"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:background="#1A1A3A"
+        android:elevation="10dp"
+        android:stretchColumns="*"> <!-- android:stretchColumns="*" 속성 지정 -->
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <!-- TableRow 밑으로 이미지버튼 추가 및 id 부여 (id: teamBtn(n)) -->
+            <ImageButton
+                android:id="@+id/teamBtn_t1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="#465273"
+                android:elevation="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/t1_white"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/teamBtn_dwg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="#465273"
+                android:elevation="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/dwg_white"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/teamBtn_gen"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="#465273"
+                android:elevation="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/gen_white"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/teamBtn_drx"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="#465273"
+                android:elevation="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/drx_white"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/teamBtn_kdf"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="#465273"
+                android:elevation="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/kdf_white"></ImageButton>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/teamBtn_hle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="#465273"
+                android:elevation="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/hle_white"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/teamBtn_kt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="#465273"
+                android:elevation="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/kt_white"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/teamBtn_lsb"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="#465273"
+                android:elevation="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/lsb_white"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/teamBtn_bro"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="#465273"
+                android:elevation="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/bro_white"></ImageButton>
+
+            <ImageButton
+                android:id="@+id/teamBtn_ns"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="#465273"
+                android:elevation="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ns_white"></ImageButton>
+        </TableRow>
+
+    </TableLayout>
+
+    <!-- Tab layout 사용 -->
+    <com.google.android.material.tabs.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_weight="1"
+        android:background="#1A1A3A"
+        app:tabIndicatorColor="#40E0D0"
+        app:tabSelectedTextColor="#40E0D0"
+        app:tabTextColor="@color/white">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ROSTER" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SCHEDULE" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <FrameLayout
+        android:id="@android:id/tabcontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+
+        <!-- Tab 내용 및 id (id : tabSchedule, tabRoster) -->
+
+        <LinearLayout
+            android:id="@+id/tabRoster"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/contentBlue"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/rosterList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:dividerHeight="3.00dp"
+                android:listSelector="@color/contentBlue"
+                android:entries="@array/rosterList">
+
+            </ListView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tabSchedule"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#232839"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/schedule_drx" />
+        </LinearLayout>
+
+    </FrameLayout>
+</LinearLayout>
